@@ -1,0 +1,131 @@
+@import "base";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+// 外框架
+.wrapper {
+  background-color: #B2B2B4;
+  width: 685px;
+  height: 210px;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.bus_stop {
+  width: 100%;
+  height: 100%;
+  background-color: $dark-green;
+  color: $dark-font;
+
+  // 站牌显示 内部嵌套，外部显示
+  @at-root {
+    .whitch-station, .route-outer{
+      float:left;
+      height: 210px;
+      position: relative;
+    }
+
+    // 当前站以及几路车标识
+    .whitch-station {
+      width: 195px;
+      left: 0;
+      top: 0;
+      text-align:center;
+      background-color: #f9f9f9;
+      .number-outer{
+        .number, .text{
+          margin-top:50px;
+          display: inline-block;
+          color: $dark-green;
+        }
+        .number{
+          font-size: 110px;
+          font-weight: bold;
+        }
+        .text{
+          font-size: 48px;
+          margin-left:15px;
+          position: relative;
+          bottom: 10px;
+        }
+      }
+      p{
+        font-size: 24px;
+        color:$dark-font;
+        font-weight: bold;
+      }
+    }
+
+    // 路线列表
+    .route-outer{
+      border-left:7px solid $light-green;
+      color: $light-font;
+      width: 467px;
+      .route-inner{
+        .info{
+          float:right;
+          font-size: 28px;
+          position: absolute;
+          right:0;
+          top: 10px;
+        }
+        .time{
+          position: absolute;
+          top: 45px;
+          left: 40px;
+        }
+        .line-point-items, .station-items{
+          text-align:center;
+          li{
+            float:left;
+          }
+        }
+        .line{
+          width: 395px;
+          position: absolute;
+          height: 1px;
+          background-color: #fff;
+          top: 82px;
+          left: 45px;
+          opacity: 0.5;
+        }
+        .station-items{
+          position: absolute;
+          top: 100px;
+          font-size: 18px;
+          p{
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: -20px;
+            left: 5px;
+          }
+          li{
+            position: relative;
+            width: 16px;
+            margin-left: 40px;
+          }
+          li:first-child, li:last-child{
+            p{
+              background-color: $light-green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

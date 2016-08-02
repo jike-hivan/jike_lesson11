@@ -1,0 +1,330 @@
+.lesson-card {
+  position: relative;
+  width: 235px;
+  height: 261px;
+  padding: 16px;
+  border: 1px solid #e4e4e4;
+  font-size: 12px;
+  -webkit-transition: border-color .3s;
+  -moz-transition: border-color .3s;
+  transition: border-color .3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20px;
+  &:hover {
+    border: 1px solid green;
+    .describe {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .images {
+    overflow: hidden;
+    margin-bottom: 15px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .other {
+    position: relative;
+    z-index: 20;
+    color: gray;
+    line-height: 18px;
+    .lesson-count {
+      max-width: 40px;
+    }
+    .learn-count {
+      max-width: 90px;
+    }
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+  .collect {
+    float: right;
+  }
+  .btn-def {
+    background: $main-green;
+    border-color: $main-green;
+    color: #fff;
+  }
+  .btn {
+    height: 26px;
+    padding: 0 15px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: background-color .8s, border-color .8s;
+    -moz-transition: background-color .8s, border-color .8s;
+    transition: background-color .8s, border-color .8s;
+    background: #eaeaea;
+    border-color: #eaeaea;
+    color: #666;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .describe {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    .picture {
+      overflow: hidden;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name {
+      position: absolute;
+      top: 74px;
+      left: 0;
+      width: 100%;
+    }
+    .text {
+      overflow: hidden;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      padding: 0 16px;
+      text-align: left;
+      line-height: 20px;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+    .btn {
+      position: absolute;
+      top: 164px;
+      left: 50%;
+      width: 100px;
+      height: 28px;
+      margin-left: -50px;
+      font-size: 14px;
+      line-height: 26px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+  }
+  .greenbtn {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    background: $main-green;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    &:active,
+    &:focus,
+    &:hover {
+      background: #66d178;
+      color: #fff;
+    }
+  }
+  .btn {
+    height: 26px;
+    padding: 0 15px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: background-color .8s, border-color .8s;
+    -moz-transition: background-color .8s, border-color .8s;
+    transition: background-color .8s, border-color .8s;
+    background: #eaeaea;
+    border-color: #eaeaea;
+    color: #666;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}
+
+.collect {
+  overflow: hidden;
+  width: 56px;
+  height: 20px;
+  .btn {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    line-height: 18px;
+  }
+}
+
+.card-transform {
+  width: 167px;
+  height: 120px;
+  border: 1px solid #E4E4E4;
+  border-right: 0;
+  border-bottom: 0;
+  float: left;
+  text-align: center;
+  position: relative;
+  overflow: hidden
+}
+
+.card-transform .back,
+.card-transform .front {
+  border-bottom: 1px solid #E4E4E4;
+  width: 167px;
+  height: 120px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: .6s;
+  -moz-backface-visibility: hidden;
+  -moz-transition: .6s;
+  -ms-backface-visibility: hidden;
+  -ms-transition: .6s;
+  backface-visibility: hidden;
+  transition: .6s;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+.card-transform .front {
+  border-bottom: 1px solid #E4E4E4;
+  padding: 15px 0;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background-color: #fff
+}
+
+.card-transform .front img {
+  margin-bottom: 5px;
+  height: 40px;
+  width: 40px
+}
+
+.card-transform .front h2 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #333
+}
+
+.card-transform .front span {
+  font-size: 14px;
+  color: $main-green
+}
+
+.card-transform .back {
+  padding-top: 30px;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background-color: #f5f5f5
+}
+
+.card-transform .back strong {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 400
+}
+
+.card-transform .back span {
+  display: block;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px
+}
+
+.card-transform .back .greenbtn {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  width: 140px;
+  height: 36px;
+  cursor: pointer
+}
+
+.card-transform:hover .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg)
+}
+
+.card-transform:hover .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg)
+}
+
+.greenbtn {
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+  background: $main-green;
+  -webkit-transition-duration: .8s;
+  transition-duration: .8s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}

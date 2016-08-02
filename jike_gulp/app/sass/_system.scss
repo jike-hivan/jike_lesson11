@@ -1,0 +1,127 @@
+.index-public-title {
+  margin-bottom: 16px;
+  margin-top: 40px;
+  strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+    a {
+      color: #333;
+    }
+  }
+  .way {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 5px 8px 0;
+    cursor: pointer;
+  }
+  .way-infor {
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+    i {
+      background: url(http://s1.jikexueyuan.com/index/images/title-sj_adebc06.jpg) center center no-repeat;
+      width: 5px;
+      height: 10px;
+      display: block;
+      position: absolute;
+      left: -5px;
+      top: 5px;
+      z-index: 10;
+    }
+  }
+  .more-lesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+.mapbox {
+  border-bottom: 1px solid #E4E4E4;
+  border-right: 1px solid #E4E4E4;
+  width: 1000px;
+  height: 481px;
+  overflow: hidden;
+  .mapbox-1200 {
+    width: 1050px;
+  }
+}
+
+.card-transform {
+  width: 167px;
+  height: 120px;
+  border: 1px solid #E4E4E4;
+  border-right: 0;
+  border-bottom: 0;
+  float: left;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  .front {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 15px 0;
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #fff;
+    img {
+      margin-bottom: 5px;
+      height: 40px;
+      width: 40px;
+    }
+    h2 {
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: #333;
+    }
+    span {
+      font-size: 14px;
+      color: $main-green;
+    }
+  }
+  .back {
+    padding-top: 30px;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: #f5f5f5;
+    strong {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .greenbtn {
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      border-radius: inherit;
+      -webkit-border-radius: inherit;
+      -moz-border-radius: inherit;
+      width: 140px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+}

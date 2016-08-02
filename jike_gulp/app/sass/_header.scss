@@ -1,0 +1,155 @@
+#header {
+  padding: 10px 0;
+  .logo {
+    width: 113px;
+    float: left;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  .header_top {
+    min-height: 70px;
+  }
+}
+
+.search_box {
+  margin-left: 180px;
+  margin-top: 5px;
+  float: left;
+  width: 380px;
+  position: relative;
+  input[type="text"] {
+    width: 350px;
+    padding: 9px 15px;
+    font-size: 12px;
+    color: #333;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    float: left;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    background: #fff url(../images/topsearch-icon_e1f5df2.png) no-repeat center;
+    border: 1px solid #ddd;
+  }
+  .search-btn2 {
+    border: 1px solid $main-green;
+    background: $main-green url(http://s1.jikexueyuan.com/common/images/topsearch-icon2_8c8d8b0.png) center center no-repeat!important;
+  }
+}
+
+.search_box .search_hot_tag {
+  position: absolute;
+  font-size: 12px;
+  top: 10px;
+  right: 50px;
+  li {
+    padding: 1px;
+    background: #f5f5f5;
+    float: left;
+    margin: 0 3px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.header_menu {
+  margin-left: 70px;
+  float: left;
+  font-size: 12px;
+  line-height: 50px;
+  text-align: right;
+  span {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  .message {
+    a {
+      width: 14px;
+      height: 13px;
+      display: inline-block;
+      background: url(../images/massage-icon2_d1369b2.gif) no-repeat center;
+      background-size: 14px 13px;
+    }
+  }
+  .header_vip {
+    height: 15px;
+  }
+}
+
+.top_hr {
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(0.14, #35b550), color-stop(0.5, #8aca8c), color-stop(1, #2d85ca));
+}
+
+.header_bottom {
+  height: 42px;
+  box-shadow: 0 1px 0 #ddd;
+}
+
+.header_bottom_menu {
+  position: relative;
+}
+
+.header_bottom_menu span {
+  line-height: 42px;
+  display: inline-block;
+  width: 120px;
+}
+
+.user-need {
+  float: right;
+  span {
+    margin-left: 10px;
+    width: auto;
+    font-size: 12px;
+    img {
+      margin-top: 10px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.head_plan {
+  padding-left: 50px;
+  border: 1px solid #e8e8e8;
+}
+
+.header_bottom_menu_pop {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 2px #ddd;
+  .head_plan {
+    padding-left: 50px;
+    bottom: 1px solid #e8e8e8;
+    .head_plan_item {
+      float: left;
+      border-left: 1px solid #e8e8e8;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 14px;
+      &:hover {
+        background-color: rgba(245, 245, 245, 0.7);
+      }
+      &:last-child {
+        border-right: 1px solid #e8e8e8;
+      }
+    }
+  }
+  .head_plan_item_box {
+    li {
+      width: 120px;
+      font-size: 12px;
+      a {
+        line-height: 29px;
+        height: 29px;
+      }
+    }
+  }
+}

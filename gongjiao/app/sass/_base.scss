@@ -1,0 +1,20 @@
+$dark-green: #187A01;
+$light-green: #54DB01;
+$light-font: #f9f9f9;
+$dark-font: #000;
+$green-font: #187A01;
+
+%cf{
+  &{
+    *zoom:1;
+    _height:1%;
+  }
+  &:before, &:after{
+    content: '';
+    display:table;
+  }
+  &:after{
+    clear: both;
+    overflow: hidden;
+  }
+}
